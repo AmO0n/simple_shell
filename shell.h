@@ -184,7 +184,7 @@ int _myalias(_inffo_t *);
 
 /* getliine.c module */
 ssize_t get_input(_inffo_t *);
-int _getline(_inffo_t *, char **, siize_tt *);
+int _getline(_inffo_t *, char **, ssize_t *);
 void sigintHandler(int);
 
 /* innffoo.c module */
@@ -214,22 +214,23 @@ int renumber_historical(_inffo_t *innffo);
 /* liststrr.c module */
 liist_t *add_nodde(liist_t **, const char *, int);
 liist_t *add_nodde_end(liist_t **, const char *, int);
-siize_tt print_list_str(const liist_t *);
+ssize_t print_list_str(const liist_t *);
 int delete_nodde_at_index(liist_t **, unsigned int);
 void free_list(liist_t **);
 
 /* liststrr2.c module */
-siize_tt list_leen(const liist_t *);
+ssize_t list_leen(const liist_t *);
 char **liist_to_strings(liist_t *);
-siize_tt print_list(const liist_t *);
+ssize_t print_list(const liist_t *);
 liist_t *nodde_starts_with(liist_t *, char *, char);
 ssize_t get_nodde_index(liist_t *, liist_t *);
 
 /* chainn.c */
-int is_chainnn(_inffo_t *, char *, siize_tt *);
-void check_chain(_inffo_t *, char *, siize_tt *, siize_tt, siize_tt);
+int is_chainnn(_inffo_t *, char *, ssize_t *);
+void check_chain(_inffo_t *, char *, ssize_t *, ssize_t, ssize_t);
 int replace_alias(_inffo_t *);
 int replace_vars(_inffo_t *);
 int replace_string(char **, char *);
 
 #endif
+
