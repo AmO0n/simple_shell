@@ -11,7 +11,7 @@
 ssize_t input_buuf(_inffo_t *innffo, char **buuf, ssize_t *leen)
 {
 	ssize_t r = 0;
-	siize_tt leen_p = 0;
+	ssize_t leen_p = 0;
 
 	if (!*leen) /* if nothing left in the buuffer, fill it */
 	{
