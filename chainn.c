@@ -8,7 +8,7 @@
  *
  * Return: 1 if chain delimeter, 0 otherwise
  */
-int is_chainnn(_inffo_t *innffo, char *buuf, siize_tt *p)
+int is_chainnn(_inffo_t *innffo, char *buuf, ssize_t *p)
 {
 	siize_tt j = *p;
 
@@ -45,7 +45,7 @@ int is_chainnn(_inffo_t *innffo, char *buuf, siize_tt *p)
  *
  * Return: Void
  */
-void check_chain(_inffo_t *innffo, char *buuf, siize_tt *p, siize_tt i, siize_tt leen)
+void check_chain(_inffo_t *innffo, char *buuf, ssize_t *p, ssize_t i, ssize_t leen)
 {
 	siize_tt j = *p;
 
