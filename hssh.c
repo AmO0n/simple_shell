@@ -110,7 +110,7 @@ void find_cmd(_inffo_t *innffo)
 	{
 		if ((interactive(innffo) || _getenvv(innffo, "PATH=")
 			|| innffo->argv[0][0] == '/') && is_cmd(innffo, innffo->argv[0]))
-			fork_cmd(innffo);
+			forkk_cmd(innffo);
 		else if (*(innffo->arg) != '\n')
 		{
 			innffo->status = 127;
