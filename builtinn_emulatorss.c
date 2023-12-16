@@ -73,7 +73,7 @@ int _maycd(_inffo_t *innffo)
 	}
 	else
 	{
-		_setenvvv(innffo, "OLDPWD", _getenvv(innffo, "PWD="));
+		_setenvvvv(innffo, "OLDPWD", _getenvv(innffo, "PWD="));
 		_setenvvv(innffo, "PWD", getcwd(buuffer, 1024));
 	}
 	return (0);
