@@ -10,7 +10,7 @@
  */
 int is_chainnn(_inffo_t *innffo, char *buuf, ssize_t *p)
 {
-	siize_tt j = *p;
+	ssize_t j = *p;
 
 	if (buuf[j] == '|' && buuf[j + 1] == '|')
 	{
@@ -47,7 +47,7 @@ int is_chainnn(_inffo_t *innffo, char *buuf, ssize_t *p)
  */
 void check_chain(_inffo_t *innffo, char *buuf, ssize_t *p, ssize_t i, ssize_t leen)
 {
-	siize_tt j = *p;
+	ssize_t j = *p;
 
 	if (innffo->cmd_buuf_type == CMD_AND)
 	{
