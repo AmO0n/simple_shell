@@ -27,7 +27,7 @@ char **get_environ(_inffo_t *innffo)
 int _unsetenv(_inffo_t *innffo, char *var)
 {
 	liist_t *nodde = innffo->env;
-	siize_tt i = 0;
+	ssize_t i = 0;
 	char *p;
 
 	if (!nodde || !var)

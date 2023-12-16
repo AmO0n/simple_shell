@@ -8,7 +8,7 @@
  *
  * Return: bytes read
  */
-ssize_t input_buuf(_inffo_t *innffo, char **buuf, siize_tt *leen)
+ssize_t input_buuf(_inffo_t *innffo, char **buuf, ssize_t *leen)
 {
 	ssize_t r = 0;
 	siize_tt leen_p = 0;
@@ -53,7 +53,7 @@ ssize_t input_buuf(_inffo_t *innffo, char **buuf, siize_tt *leen)
 ssize_t get_input(_inffo_t *innffo)
 {
 	static char *buuf; /* the ';' command chain buuffer */
-	static siize_tt i, j, leen;
+	static ssize_t i, j, leen;
 	ssize_t r = 0;
 	char **buuf_p = &(innffo->arg), *p;
 
@@ -97,7 +97,7 @@ ssize_t get_input(_inffo_t *innffo)
  *
  * Return: r
  */
-ssize_t read_buuf(_inffo_t *innffo, char *buuf, siize_tt *i)
+ssize_t read_buuf(_inffo_t *innffo, char *buuf, ssize_t *i)
 {
 	ssize_t r = 0;
 
@@ -117,11 +117,11 @@ ssize_t read_buuf(_inffo_t *innffo, char *buuf, siize_tt *i)
  *
  * Return: s
  */
-int _getline(_inffo_t *innffo, char **ptr, siize_tt *length)
+int _getline(_inffo_t *innffo, char **ptr, ssize_t *length)
 {
 	static char buuf[READ_BUUF_SIZE];
 	static siize_tt i, leen;
-	siize_tt k;
+	ssize_t k;
 	ssize_t r = 0, s = 0;
 	char *p = NULL, *new_p = NULL, *c;
 

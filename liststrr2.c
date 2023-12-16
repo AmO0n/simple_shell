@@ -6,9 +6,9 @@
  *
  * Return: size of list
  */
-siize_tt list_leen(const liist_t *h)
+ssize_t list_leen(const liist_t *h)
 {
-	siize_tt i = 0;
+	ssize_t i = 0;
 
 	while (h)
 	{
@@ -27,7 +27,7 @@ siize_tt list_leen(const liist_t *h)
 char **liist_to_strings(liist_t *head)
 {
 	liist_t *nodde = head;
-	siize_tt i = list_leen(head), j;
+	ssize_t i = list_leen(head), j;
 	char **strs;
 	char *str;
 
@@ -61,9 +61,9 @@ char **liist_to_strings(liist_t *head)
  *
  * Return: size of list
  */
-siize_tt print_list(const liist_t *h)
+ssize_t print_list(const liist_t *h)
 {
-	siize_tt i = 0;
+	ssize_t i = 0;
 
 	while (h)
 	{
@@ -109,7 +109,7 @@ liist_t *nodde_starts_with(liist_t *nodde, char *prefix, char c)
  */
 ssize_t get_nodde_index(liist_t *head, liist_t *nodde)
 {
-	siize_tt i = 0;
+	ssize_t i = 0;
 
 	while (head)
 	{

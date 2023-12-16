@@ -80,9 +80,9 @@ liist_t *add_nodde_end(liist_t **head, const char *str, int num)
  *
  * Return: size of list
  */
-siize_tt print_list_str(const liist_t *h)
+ssize_t print_list_str(const liist_t *h)
 {
-	siize_tt i = 0;
+	ssize_t i = 0;
 
 	while (h)
 	{

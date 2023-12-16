@@ -48,7 +48,7 @@ int _mysetenvv(_inffo_t *innffo)
 		_eputss("Incorrect number of arguements\n");
 		return (1);
 	}
-	if (_setenvvv(innffo, innffo->argv[1], innffo->argv[2]))
+	if (_setenvvvv(innffo, innffo->argv[1], innffo->argv[2]))
 		return (0);
 	return (1);
 }
@@ -83,7 +83,7 @@ int _myunsetenvv(_inffo_t *innffo)
 int populate_env_list(_inffo_t *innffo)
 {
 	liist_t *nodde = NULL;
-	siize_tt i;
+	ssize_t i;
 
 	for (i = 0; environ[i]; i++)
 		add_nodde_end(&nodde, environ[i], 0);
